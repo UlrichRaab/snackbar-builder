@@ -36,7 +36,7 @@ publish {
 }
 
 dependencies {
-    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:design:23.4.0'
     // Testing
     testCompile 'junit:junit:4.12'
 }
