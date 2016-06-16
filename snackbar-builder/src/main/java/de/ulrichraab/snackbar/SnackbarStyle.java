@@ -19,8 +19,6 @@ import android.widget.TextView;
  */
 public class SnackbarStyle {
 
-   private static final int VIEW_ID_ACTION = android.support.design.R.id.snackbar_action;
-   private static final int VIEW_ID_MESSAGE = android.support.design.R.id.snackbar_text;
    private static final String TYPEFACE_ROBOTO_MEDIUM = "Roboto-Medium.ttf";
 
    private int actionBgColorId;
@@ -47,8 +45,8 @@ public class SnackbarStyle {
    public void applyOn (@NonNull Snackbar snackbar) {
       // Get the views
       View snackbarView = snackbar.getView();
-      TextView actionView = (TextView) snackbarView.findViewById(VIEW_ID_ACTION);
-      TextView messageView = (TextView) snackbarView.findViewById(VIEW_ID_MESSAGE);
+      TextView actionView = (TextView) snackbarView.findViewById(R.id.snackbar_action);
+      TextView messageView = (TextView) snackbarView.findViewById(R.id.snackbar_text);
       // Get the context
       Context context = snackbarView.getContext();
       // Set the typeface ot the action view to Roboto Medium if API < 21
